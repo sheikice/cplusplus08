@@ -44,9 +44,10 @@ int main(void)
 		}
 		try
 		{
-			Span sp2(6);
-			sp2.addRange(vec.begin(), vec.end());
-			std::cout << "\n[TEST 3: {0, 1, 2, 3, 4}]\n";
+			std::cout << "\n[TEST 10 000: {0, 1, 2, 3, 4, 0, 1, 2, ...}]\n";
+			Span sp2(10000);
+			for (int i = 0; i < 2000; i++)
+				sp2.addRange(vec.begin(), vec.end());
 			std::cout << "longestSpan = " << sp2.shortestSpan() << std::endl;
 			std::cout << "shortestSpan = " << sp2.longestSpan() << '\n' << std::endl;
 		}
