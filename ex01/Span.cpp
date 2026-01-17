@@ -31,7 +31,6 @@ unsigned int Span::getSize(void) const
 
 void	Span::addNumber(int nbr)
 {
-	std::cout << "Add:" << nbr << '\n';
 	if (_multiSet.size() == _N)
 		throw spanFullException();
 	_multiSet.insert(nbr);
