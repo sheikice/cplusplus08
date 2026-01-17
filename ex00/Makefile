@@ -6,7 +6,7 @@
 #    By: jwuille <jwuille@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/17 14:16:44 by jwuille           #+#    #+#              #
-#    Updated: 2026/01/15 15:02:00 by jwuille          ###   ########.fr        #
+#    Updated: 2026/01/17 17:07:23 by jwuille          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ OBJ_DIR = obj
 SRC =	\
 		main.cpp
 
-CC = clang++ -MD -std=c++98
+CC = c++ -MD -std=c++98
 CFLAGS = -Wall -Werror -Wextra -g3
 NAME = a.out
 
